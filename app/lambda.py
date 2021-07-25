@@ -37,7 +37,3 @@ def predict():
         'prediction': '>$50K' if proba >= 0.5 else '<=$50K',
         'probability': proba
     }
-
-@app.route("/time")
-def get_current_time():
-    return {"time": f"Time is {round(time.time())}"}

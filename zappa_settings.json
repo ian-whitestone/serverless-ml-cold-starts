@@ -7,10 +7,11 @@
         "log_level": "INFO",
         "s3_bucket": "serverless-ml-deployments",
         "lambda_description": "Zappa + Docker + Flask",
-        "timeout_seconds": 45,
-        "memory_size": 1600,
+        "timeout_seconds": 120,
+        "memory_size": 4500,
         "aws_environment_variables": {
-            "MODEL_SOURCE": "DISK"
+            "MODEL_SOURCE": "DISK",
+            "MODEL_VERSION": "v3"
         }
     },
     "lambda_docker_flask_ml_s3": {
@@ -20,11 +21,12 @@
         "keep_warm": false,
         "log_level": "INFO",
         "s3_bucket": "serverless-ml-deployments",
-        "lambda_description": "Zappa + Docker + Flask",
-        "timeout_seconds": 45,
-        "memory_size": 1600,
+        "lambda_description": "Zappa + Docker + Flask + S3",
+        "timeout_seconds": 120,
+        "memory_size": 4500,
         "aws_environment_variables": {
-            "MODEL_SOURCE": "S3"
+            "MODEL_SOURCE": "S3",
+            "MODEL_VERSION": "v3"
         }
     },
     "lambda_flask_ml": {
@@ -37,13 +39,17 @@
         "runtime": "python3.8",
         "s3_bucket": "serverless-ml-deployments",
         "lambda_description": "Zappa + Flask",
-        "timeout_seconds": 45,
+        "timeout_seconds": 30,
         "memory_size": 1600,
         "exclude": [
             "*.pkl",
             "*.joblib",
             "*.csv",
             "*.ipynb"
-        ]
+        ],
+        "aws_environment_variables": {
+            "MODEL_SOURCE": "DISK",
+            "MODEL_VERSION": "v1"
+        }
     }
 }

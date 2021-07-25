@@ -99,7 +99,7 @@ table.stats {
 
         <div class="info">
             
-            <p>During: <span>2021-07-20 11:37:56 - 2021-07-20 11:38:55</span></p>
+            <p>During: <span>2021-07-24 11:39:20 - 2021-07-24 11:40:19</span></p>
             <p>Target Host: <span>https://okxxo17i90.execute-api.us-east-1.amazonaws.com/lambda_docker_flask_ml</span></p>
         </div>
 
@@ -125,27 +125,27 @@ table.stats {
                         <tr>
                             <td>POST</td>
                             <td>/lambda_docker_flask_ml/predict</td>
-                            <td>1273</td>
-                            <td>0</td>
-                            <td>584</td>
-                            <td>65</td>
-                            <td>12641</td>
-                            <td>60</td>
-                            <td>21.6</td>
-                            <td>0.0</td>
+                            <td>598</td>
+                            <td>100</td>
+                            <td>5814</td>
+                            <td>43</td>
+                            <td>29325</td>
+                            <td>56</td>
+                            <td>10.1</td>
+                            <td>1.7</td>
                         </tr>
                     
                         <tr class="total">
                             <td></td>
                             <td>Aggregated</td>
-                            <td>1273</td>
-                            <td>0</td>
-                            <td>584</td>
-                            <td>65</td>
-                            <td>12641</td>
-                            <td>60</td>
-                            <td>21.6</td>
-                            <td>0.0</td>
+                            <td>598</td>
+                            <td>100</td>
+                            <td>5814</td>
+                            <td>43</td>
+                            <td>29325</td>
+                            <td>56</td>
+                            <td>10.1</td>
+                            <td>1.7</td>
                         </tr>
                     
                 </tbody>
@@ -175,32 +175,56 @@ table.stats {
                             <td>POST</td>
                             <td>/lambda_docker_flask_ml/predict</td>
                             <td>110</td>
-                            <td>120</td>
-                            <td>130</td>
-                            <td>160</td>
-                            <td>220</td>
-                            <td>5500</td>
-                            <td>8700</td>
-                            <td>13000</td>
+                            <td>150</td>
+                            <td>4600</td>
+                            <td>5800</td>
+                            <td>29000</td>
+                            <td>29000</td>
+                            <td>29000</td>
+                            <td>29000</td>
                         </tr>
                     
                         <tr class="total">
                             <td></td>
                             <td>Aggregated</td>
                             <td>110</td>
-                            <td>120</td>
-                            <td>130</td>
-                            <td>160</td>
-                            <td>220</td>
-                            <td>5500</td>
-                            <td>8700</td>
-                            <td>13000</td>
+                            <td>150</td>
+                            <td>4600</td>
+                            <td>5800</td>
+                            <td>29000</td>
+                            <td>29000</td>
+                            <td>29000</td>
+                            <td>29000</td>
                         </tr>
                     
                 </tbody>
             </table>
         </div>
 
+        
+            <div class="failures">
+                <h2>Failures Statistics</h2>
+                <table class="stats">
+                    <thead>
+                        <tr>
+                            <th>Method</th>
+                            <th>Name</th>
+                            <th>Error</th>
+                            <th>Occurrences</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                            <tr>
+                                <td>POST</td>
+                                <td>/lambda_docker_flask_ml/predict</td>
+                                <td>504 Server Error: Gateway Timeout for url: https://okxxo17i90.execute-api.us-east-1.amazonaws.com/lambda_docker_flask_ml/predict</td>
+                                <td>100</td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
         
 
         
@@ -426,12 +450,12 @@ return new Za.prototype.init(a,b,c,d,e)}m.Tween=Za,Za.prototype={constructor:Za,
     <script>
         
 var stats_history = {
-    "time": ["11:37:56", "11:38:01", "11:38:06", "11:38:11", "11:38:16", "11:38:21", "11:38:26", "11:38:31", "11:38:36", "11:38:41", "11:38:46", "11:38:51"],
-    "user_count": [{"value": 1}, {"value": 95}, {"value": 100}, {"value": 100}, {"value": 100}, {"value": 100}, {"value": 100}, {"value": 100}, {"value": 100}, {"value": 100}, {"value": 100}, {"value": 100}],
-    "current_rps": [{"users": 1, "value": 0}, {"users": 95, "value": 0}, {"users": 100, "value": 3.75}, {"users": 100, "value": 13.6}, {"users": 100, "value": 23.0}, {"users": 100, "value": 24.6}, {"users": 100, "value": 24.1}, {"users": 100, "value": 23.7}, {"users": 100, "value": 24.6}, {"users": 100, "value": 25.3}, {"users": 100, "value": 24.9}, {"users": 100, "value": 24.3}],
-    "current_fail_per_sec": [{"users": 1, "value": 0}, {"users": 95, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}],
-    "response_time_percentile_50": [{"users": 1, "value": 0}, {"users": 95, "value": 0}, {"users": 100, "value": 5200.0}, {"users": 100, "value": 210.0}, {"users": 100, "value": 120.0}, {"users": 100, "value": 120.0}, {"users": 100, "value": 110.0}, {"users": 100, "value": 94}, {"users": 100, "value": 79}, {"users": 100, "value": 79}, {"users": 100, "value": 78}, {"users": 100, "value": 78}],
-    "response_time_percentile_95": [{"users": 1, "value": 0}, {"users": 95, "value": 0}, {"users": 100, "value": 7700.0}, {"users": 100, "value": 9000.0}, {"users": 100, "value": 8700.0}, {"users": 100, "value": 210.0}, {"users": 100, "value": 200.0}, {"users": 100, "value": 190.0}, {"users": 100, "value": 170.0}, {"users": 100, "value": 190.0}, {"users": 100, "value": 200.0}, {"users": 100, "value": 200.0}],
+    "time": ["11:39:20", "11:39:25", "11:39:30", "11:39:35", "11:39:40", "11:39:45", "11:39:50", "11:39:55", "11:40:00", "11:40:05", "11:40:10", "11:40:15"],
+    "user_count": [{"value": 1}, {"value": 96}, {"value": 100}, {"value": 100}, {"value": 100}, {"value": 100}, {"value": 100}, {"value": 100}, {"value": 100}, {"value": 100}, {"value": 100}, {"value": 100}],
+    "current_rps": [{"users": 1, "value": 0}, {"users": 96, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 4.4}, {"users": 100, "value": 10.0}, {"users": 100, "value": 12.1}, {"users": 100, "value": 20.3}, {"users": 100, "value": 25.2}],
+    "current_fail_per_sec": [{"users": 1, "value": 0}, {"users": 96, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 4.4}, {"users": 100, "value": 10.0}, {"users": 100, "value": 3.7}, {"users": 100, "value": 0}, {"users": 100, "value": 0}],
+    "response_time_percentile_50": [{"users": 1, "value": 0}, {"users": 96, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 29000.0}, {"users": 100, "value": 29000.0}, {"users": 100, "value": 4800.0}, {"users": 100, "value": 110.0}, {"users": 100, "value": 97}],
+    "response_time_percentile_95": [{"users": 1, "value": 0}, {"users": 96, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 29000.0}, {"users": 100, "value": 29000.0}, {"users": 100, "value": 29000.0}, {"users": 100, "value": 5100.0}, {"users": 100, "value": 200.0}],
 };
         var rpsChart = new LocustLineChart($(".charts-container"), "Total Requests per Second", ["RPS", "Failures/s"], "reqs/s", ['#00ca5a', '#ff6d6d']);
         var responseTimeChart = new LocustLineChart($(".charts-container"), "Response Times (ms)", ["Median Response Time", "95% percentile"], "ms");
